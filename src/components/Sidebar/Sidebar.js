@@ -43,14 +43,14 @@ function Sidebar({ color, image, routes }) {
           >
             <div className="logo-img">
               <img
-                src={require("assets/img/reactlogo.png").default}
+                src={require("assets/img/owl.svg").default}
                 alt="..."
               />
             </div>
           </a>
-          <a className="simple-text" href="http://www.creative-tim.com">
+          {/* <a className="simple-text" href="http://www.creative-tim.com">
             Creative Tim
-          </a>
+          </a> */}
         </div>
         <Nav>
           {routes.map((prop, key) => {

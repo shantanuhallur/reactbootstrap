@@ -25,28 +25,34 @@ import Notifications from "views/Notifications.js";
 import Upgrade from "views/Upgrade.js";
 
 const dashboardRoutes = [
-  {
-    upgrade: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "nc-icon nc-alien-33",
-    component: Upgrade,
-    layout: "/admin",
-  },
-  {
-    path: "/dashboard",
-    name: "Dashboard",
-    icon: "nc-icon nc-chart-pie-35",
-    component: Dashboard,
-    layout: "/admin",
-  },
+
   {
     path: "/user",
     name: "User Profile",
     icon: "nc-icon nc-circle-09",
     component: UserProfile,
     layout: "/admin",
+    
   },
+
+  {
+    path: "/dashboard",
+    name: "Reccomendations",
+    icon: "nc-icon nc-notification-70",
+    component: Dashboard,
+    layout: "/admin",
+    
+  },
+  
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    icon: "nc-icon nc-chart-pie-35",
+    component: Dashboard,
+    layout: "/admin",
+    
+  },
+ 
   {
     path: "/table",
     name: "Saved Segments",
@@ -56,7 +62,7 @@ const dashboardRoutes = [
   },
   {
     path: "/typography",
-    name: "Cumstomer insights",
+    name: "Customer insights",
     icon: "nc-icon nc-paper-2",
     component: Typography,
     layout: "/admin",
@@ -64,21 +70,56 @@ const dashboardRoutes = [
   {
     path: "/icons",
     name: "Loyalty Analytics",
-    icon: "nc-icon nc-atom",
+    icon: "nc-icon nc-chart-bar-32",
     component: Icons,
     layout: "/admin",
   },
   {
     path: "/maps",
     name: "Lifetime Value",
-    icon: "nc-icon nc-pin-3",
+    icon: "nc-icon nc-money-coins",
     component: Maps,
     layout: "/admin",
   },
   {
     path: "/notifications",
     name: "Product Insights",
-    icon: "nc-icon nc-bell-55",
+    icon: "nc-icon nc-tag-content",
+    component: Notifications,
+    layout: "/admin",
+  },
+  {
+    path: "/notifications",
+    name: "Repeat Purchase",
+    icon: "nc-icon nc-bag",
+    component: Notifications,
+    layout: "/admin",
+  },
+  {
+    path: "/notifications",
+    name: "Product Journey",
+    icon: "nc-icon nc-cart-simple",
+    component: Notifications,
+    layout: "/admin",
+  },
+  {
+    path: "/notifications",
+    name: "categ Analytics",
+    icon: "nc-icon nc-bullet-list-67",
+    component: Notifications,
+    layout: "/admin",
+  },
+  {
+    path: "/notifications",
+    name: "CRM",
+    icon: "nc-icon nc-badge",
+    component: Notifications,
+    layout: "/admin",
+  },
+  {
+    path: "/notifications",
+    name: "Settings",
+    icon: "nc-icon nc-settings-gear-64",
     component: Notifications,
     layout: "/admin",
   },
