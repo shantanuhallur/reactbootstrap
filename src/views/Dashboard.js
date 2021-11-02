@@ -25,7 +25,7 @@ function Dashboard() {
             <Card className="card-stats">
               <Card.Body>
                 <Row>
-                  <Col xs="5">
+                  {/* <Col xs="5">
                     <div className="icon-big text-center icon-warning">
                       <i className="nc-icon nc-chart text-warning"></i>
                     </div>
@@ -34,6 +34,30 @@ function Dashboard() {
                     <div className="numbers">
                       <p className="card-category">Number</p>
                       <Card.Title as="h4">150GB</Card.Title>
+                    </div>
+                  </Col> */}
+                    <Col>
+                      <div>
+                        <Card.Title>Champions</Card.Title>
+                        <Card.Text as="h3"></Card.Text>
+                        {/* <Card.Title as="h4">150GB</Card.Title> */}
+                      </div>
+                    </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <div>
+                      <Card.Title as="h6">Customers</Card.Title>
+                      <Card.Title as="h4">27</Card.Title>
+                      <Card.Text as="h3"></Card.Text>
+                    </div>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <div>
+                      <Card.Title as="h6">Lifetime Value</Card.Title>
+                      <Card.Title as="h4">$34,763</Card.Title>
                     </div>
                   </Col>
                 </Row>
