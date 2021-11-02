@@ -38,41 +38,87 @@ function Dashboard() {
                   </Col> */}
                     <Col>
                       <div>
-                        <Card.Title>Champions</Card.Title>
+                        <Card.Title as="h4">Champions</Card.Title>
                         <Card.Text as="h3"></Card.Text>
                         {/* <Card.Title as="h4">150GB</Card.Title> */}
                       </div>
                     </Col>
                 </Row>
                 <Row>
-                  <Col>
+                  <Col xs="7">
                     <div>
-                      <Card.Title as="h6">Customers</Card.Title>
+                      <Card.Title as="h5">Customers</Card.Title>
                       <Card.Title as="h4">27</Card.Title>
-                      <Card.Text as="h3"></Card.Text>
+                      <Card.Text as="h1"></Card.Text>
                     </div>
+                  </Col>
+                  <Col xs="5">
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Last Week</Card.Text>
+                        {/* <Card.Text>+10%</Card.Text> */}
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        {/* <Card.Text className="card-category">Last Week</Card.Text> */}
+                        <Card.Title>+10%</Card.Title>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Overall</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>2.6%</Card.Title>
+                      </div>
+                    </Row>
                   </Col>
                 </Row>
                 <Row>
-                  <Col>
+                  <Col xs="7">
                     <div>
-                      <Card.Title as="h6">Lifetime Value</Card.Title>
+                      <Card.Title as="h5">Lifetime Value</Card.Title>
                       <Card.Title as="h4">$34,763</Card.Title>
                     </div>
+                  </Col>
+                  <Col xs="5">
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Last Week</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>+20%</Card.Title>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">vs Others</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>$750</Card.Title>
+                      </div>
+                    </Row>
                   </Col>
                 </Row>
               </Card.Body>
               <Card.Footer>
                 <hr></hr>
                 <div className="stats">
-                  <i className="fas fa-redo mr-1"></i>
-                  Update Now
+                  <a href="Dive.com"><u>Dive Deep</u></a>
+                  
                 </div>
               </Card.Footer>
             </Card>
           </Col>
           <Col lg="3" sm="6">
-            <Card className="card-stats">
+            {/* <Card className="card-stats">
               <Card.Body>
                 <Row>
                   <Col xs="5">
@@ -95,56 +141,254 @@ function Dashboard() {
                   Last day
                 </div>
               </Card.Footer>
-            </Card>
-          </Col>
-          <Col lg="3" sm="6">
+            </Card> */}
             <Card className="card-stats">
               <Card.Body>
                 <Row>
-                  <Col xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-vector text-danger"></i>
+                    <Col>
+                      <div>
+                        <Card.Title as="h4">Loyal Customers</Card.Title>
+                        <Card.Text as="h3"></Card.Text>
+                        {/* <Card.Title as="h4">150GB</Card.Title> */}
+                      </div>
+                    </Col>
+                </Row>
+                <Row>
+                  <Col xs="7">
+                    <div>
+                      <Card.Title as="h5">Customers</Card.Title>
+                      <Card.Title as="h4">245</Card.Title>
+                      <Card.Text as="h1"></Card.Text>
                     </div>
                   </Col>
+                  <Col xs="5">
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Last Week</Card.Text>
+                        {/* <Card.Text>+10%</Card.Text> */}
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        {/* <Card.Text className="card-category">Last Week</Card.Text> */}
+                        <Card.Title>+10%</Card.Title>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Overall</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>2.6%</Card.Title>
+                      </div>
+                    </Row>
+                  </Col>
+                </Row>
+                <Row>
                   <Col xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Errors</p>
-                      <Card.Title as="h4">23</Card.Title>
+                    <div>
+                      <Card.Title as="h5">Lifetime Value</Card.Title>
+                      <Card.Title as="h4">$9,451</Card.Title>
                     </div>
+                  </Col>
+                  <Col xs="5">
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Last Week</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>+20%</Card.Title>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">vs Others</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>$750</Card.Title>
+                      </div>
+                    </Row>
                   </Col>
                 </Row>
               </Card.Body>
               <Card.Footer>
                 <hr></hr>
                 <div className="stats">
-                  <i className="far fa-clock-o mr-1"></i>
-                  In the last hour
+                  <a href="Dive.com"><u>Dive Deep</u></a>
                 </div>
               </Card.Footer>
             </Card>
           </Col>
           <Col lg="3" sm="6">
-            <Card className="card-stats">
+          <Card className="card-stats">
               <Card.Body>
                 <Row>
-                  <Col xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-favourite-28 text-primary"></i>
+                    <Col>
+                      <div>
+                        <Card.Title as="h4">Potential Loyalist</Card.Title>
+                        <Card.Text as="h3"></Card.Text>
+                        {/* <Card.Title as="h4">150GB</Card.Title> */}
+                      </div>
+                    </Col>
+                </Row>
+                <Row>
+                  <Col xs="7">
+                    <div>
+                      <Card.Title as="h5">Customers</Card.Title>
+                      <Card.Title as="h4">541</Card.Title>
+                      <Card.Text as="h1"></Card.Text>
                     </div>
                   </Col>
+                  <Col xs="5">
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Last Week</Card.Text>
+                        {/* <Card.Text>+10%</Card.Text> */}
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        {/* <Card.Text className="card-category">Last Week</Card.Text> */}
+                        <Card.Title>+10%</Card.Title>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Overall</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>2.6%</Card.Title>
+                      </div>
+                    </Row>
+                  </Col>
+                </Row>
+                <Row>
                   <Col xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Followers</p>
-                      <Card.Title as="h4">+45K</Card.Title>
+                    <div>
+                      <Card.Title as="h5">Lifetime Value</Card.Title>
+                      <Card.Title as="h4">$8000</Card.Title>
                     </div>
+                  </Col>
+                  <Col xs="5">
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Last Week</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>+20%</Card.Title>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">vs Others</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>$750</Card.Title>
+                      </div>
+                    </Row>
                   </Col>
                 </Row>
               </Card.Body>
               <Card.Footer>
                 <hr></hr>
                 <div className="stats">
-                  <i className="fas fa-redo mr-1"></i>
-                  Update now
+                  <a href="Dive.com"><u>Dive Deep</u></a>
+                </div>
+              </Card.Footer>
+            </Card>
+          </Col>
+          <Col lg="3" sm="6">
+          <Card className="card-stats">
+              <Card.Body>
+                <Row>
+                    <Col>
+                      <div>
+                        <Card.Title as="h4">Promising</Card.Title>
+                        <Card.Text as="h3"></Card.Text>
+                        {/* <Card.Title as="h4">150GB</Card.Title> */}
+                      </div>
+                    </Col>
+                </Row>
+                <Row>
+                  <Col xs="7">
+                    <div>
+                      <Card.Title as="h5">Customers</Card.Title>
+                      <Card.Title as="h4">945</Card.Title>
+                      <Card.Text as="h1"></Card.Text>
+                    </div>
+                  </Col>
+                  <Col xs="5">
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Last Week</Card.Text>
+                        {/* <Card.Text>+10%</Card.Text> */}
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        {/* <Card.Text className="card-category">Last Week</Card.Text> */}
+                        <Card.Title>+10%</Card.Title>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Overall</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>2.6%</Card.Title>
+                      </div>
+                    </Row>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col xs="7">
+                    <div>
+                      <Card.Title as="h5">Lifetime Value</Card.Title>
+                      <Card.Title as="h4">$4,751</Card.Title>
+                    </div>
+                  </Col>
+                  <Col xs="5">
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">Last Week</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>+20%</Card.Title>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div className="numbers">
+                        <Card.Text className="card-category">vs Others</Card.Text>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div>
+                        <Card.Title>$750</Card.Title>
+                      </div>
+                    </Row>
+                  </Col>
+                </Row>
+              </Card.Body>
+              <Card.Footer>
+                <hr></hr>
+                <div className="stats">
+                  <a href="Dive.com"><u>Dive Deep</u></a>
                 </div>
               </Card.Footer>
             </Card>
